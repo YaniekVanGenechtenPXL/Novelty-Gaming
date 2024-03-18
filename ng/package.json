@@ -11,6 +11,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "sass": "^1.72.0",
+    "volar-service-vetur": "^0.0.33",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
