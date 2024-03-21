@@ -1,7 +1,7 @@
 <template>
   <header>
-    <img id="img_logoExt" src="../assets/Logo_Black_Ext.png" alt="Logo" />
-    <img id="img_logoMin" src="../assets/Logo_Black.png" alt="Logo" />
+    <img id="img_logoExt" src="../assets/logos/Logo_Black_Ext.png" alt="Logo" />
+    <img id="img_logoMin" src="../assets/logos/Logo_Black.png" alt="Logo" />
     <nav>
       <div id="nav__main" v-if="NavMainItemVisible === 'true'">
         <ul>
@@ -31,18 +31,18 @@ export default {
       NavMainItemVisible: 'true',
 
       navItems: [
-        { label: 'Home', url: '/', icon: 'src/assets/home.png' },
-        { label: 'Keycaps', url: '/', icon: 'src/assets/keycaps.png' },
-        { label: 'Keyboards', url: '/', icon: 'src/assets/keyboard.png' },
-        { label: 'Mousepads', url: '/', icon: 'src/assets/mousepad.png' },
-        { label: 'Cables', url: '/', icon: 'src/assets/cable.png' },
-        { label: 'About us', url: '/', icon: 'src/assets/about.png' }
+        { label: 'Home', url: '/', icon: 'src/assets/icons/home.png' },
+        { label: 'Keycaps', url: '/', icon: 'src/assets/icons/keycaps.png' },
+        { label: 'Keyboards', url: '/', icon: 'src/assets/icons/keyboard.png' },
+        { label: 'Mousepads', url: '/', icon: 'src/assets/icons/mousepad.png' },
+        { label: 'Cables', url: '/', icon: 'src/assets/icons/cable.png' },
+        { label: 'About us', url: '/', icon: 'src/assets/icons/about.png' }
       ],
       navSubItems: [
-        { label: 'Favourite', url: '/', icon: 'src/assets/favourite.png' },
-        { label: 'Shopping Cart', url: '/', icon: 'src/assets/cart.png' },
-        { label: 'Account', url: '/', icon: 'src/assets/account.png' },
-        { label: 'Main navigation', url: '/', icon: 'src/assets/menu.png', click: 'toggleMobileMenu' }
+        { label: 'Favourite', url: '/', icon: 'src/assets/icons/favourite.png' },
+        { label: 'Shopping Cart', url: '/', icon: 'src/assets/icons/cart.png' },
+        { label: 'Account', url: '/', icon: 'src/assets/icons/account.png' },
+        { label: 'Main navigation', url: '/', icon: 'src/assets/icons/menu.png', click: 'toggleMobileMenu' }
       ]
     }
   }
