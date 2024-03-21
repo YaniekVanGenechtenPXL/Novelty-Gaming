@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="spotlightContainer">
         <SpotlightItemComponent v-for="(item, index) in SpotlightItems" :key="index" :item="item" />
     </div>
 </template>
@@ -15,7 +15,7 @@ export default {
         return {
             SpotlightItems: [
                 { title: 'Authentic mousepads', desc: 'Up to 50 different designs', img: 'src/assets/mousepad1.png', buttonTxt: 'Get your pad' },
-                { title: 'Custom keyboards', desc: 'Multiple keyboard styles', img: 'src/assets/home.png', buttonTxt: 'Get your set' }
+                { title: 'Custom keyboards', desc: 'Multiple keyboard styles', img: 'src/assets/keyboard1.png', buttonTxt: 'Get your set' }
             ]
         }
     }
@@ -27,5 +27,11 @@ export default {
         width: 80vw;
         margin: 80px auto;
         display: flex;
+    }
+
+    @media (max-width: 1100px) {
+        div#spotlightContainer {
+            flex-direction: column;
+        }
     }
 </style>
