@@ -28,6 +28,9 @@ div#container {
   height: 16vw;
   display: flex;
   background-color: #231f20;
+  background-image: url(../assets/cardBg.png);
+  background-size: cover;
+  background-position: center center;
   div#leftside {
     width: 45%;
     display: flex;

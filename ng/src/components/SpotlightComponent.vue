@@ -15,7 +15,7 @@ export default {
         return {
             SpotlightItems: [
                 { title: 'Authentic mousepads', desc: 'Up to 50 different designs', img: 'src/assets/mousepad.png', buttonTxt: 'Get your pad' },
-                { title: 'Custom keyboards', desc: 'Multiple keyboard styles', img: 'src/assets/keyboard.png', buttonTxt: 'Get your set' }
+                { title: 'Custom keyboards', desc: 'Multiple keyboard styles', img: 'src/assets/keyboard.png', buttonTxt: 'Get your board' }
             ]
         }
     }

@@ -53,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 header {
   width: 100vw;
-  height: 124px;
+  height: 95px;
   padding: 0 40px;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@ header {
   top: 0;
   background-color: #FFF;
   img {
-    height: 80px;
+    height: 70px;
   }
   img#img_logoMin {
     display: none;
@@ -76,6 +76,12 @@ header {
         justify-content: flex-end;
         align-items: center;
         gap: 20px;
+      }
+    }
+    div#nav__sub {
+      ul {
+        position: relative;
+        top: 3px;
       }
     }
   }
