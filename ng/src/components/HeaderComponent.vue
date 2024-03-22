@@ -59,7 +59,8 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  background-color: #FFF;
+  background-color: var(--white);
+  z-index: 100;
   img {
     height: 70px;
   }

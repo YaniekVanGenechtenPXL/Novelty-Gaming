@@ -15,4 +15,13 @@ import { RouterView } from 'vue-router'
   font-weight: 600;
   font-style: normal;
 }
+
+body {
+  background-color: var(--white);
+}
+
+:root {
+  --black: #231F20;
+  --white: #F9F9F9;
+}
 </style>

@@ -23,10 +23,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    div {
+    div#spotlightContainer {
         width: 80vw;
-        margin: 80px auto;
+        margin: 100px auto;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
     }
 
     @media (max-width: 1100px) {
