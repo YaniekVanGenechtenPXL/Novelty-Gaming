@@ -3,14 +3,24 @@
     <img id="img_logoExt" src="../assets/logos/Logo_Black_Ext.png" alt="Logo" />
     <img id="img_logoMin" src="../assets/logos/Logo_Black.png" alt="Logo" />
     <nav>
-      <div id="nav__main" v-if="NavMainItemVisible === 'true'">
+      <div id="nav__main">
         <ul>
           <NavMainItem v-for="(item, index) in navItems" :key="index" :item="item" />
         </ul>
       </div>
       <div id="nav__sub">
         <ul>
-          <NavSubItem v-for="(item, index) in navSubItems" :key="index" :item="item" @click="toggleMobileMenu" />
+          <NavSubItem
+            v-for="(item, index) in navSubItems"
+            :key="index"
+            :item="item"
+            @click="toggleMobileMenu"
+          />
+        </ul>
+      </div>
+      <div id="nav__main__mobile" :style="dynamicStyle">
+        <ul>
+          <NavMainItem v-for="(item, index) in navItems" :key="index" :item="item" />
         </ul>
       </div>
     </nav>
@@ -28,7 +38,10 @@ export default {
   },
   data() {
     return {
-      NavMainItemVisible: 'true',
+      navMainMobileVisible: 'false',
+      dynamicStyle: {
+        top: '-300px'
+      },
 
       navItems: [
         { label: 'Home', url: '/', icon: 'src/assets/icons/home.png' },
@@ -42,8 +55,24 @@ export default {
         { label: 'Favourite', url: '/', icon: 'src/assets/icons/favourite.png' },
         { label: 'Shopping Cart', url: '/', icon: 'src/assets/icons/cart.png' },
         { label: 'Account', url: '/', icon: 'src/assets/icons/account.png' },
-        { label: 'Main navigation', url: '/', icon: 'src/assets/icons/menu.png', click: 'toggleMobileMenu' }
+        {
+          label: 'Main navigation',
+          url: '/',
+          icon: 'src/assets/icons/menu.png',
+          click: 'toggleMobileMenu'
+        }
       ]
+    }
+  },
+  methods: {
+    toggleMobileMenu() {
+      if (this.navMainMobileVisible === 'true') {
+        this.dynamicStyle = { top: '-300px' };
+        this.navMainMobileVisible = 'false'
+      } else {
+        this.dynamicStyle = { top: '90px' };
+        this.navMainMobileVisible = 'true'
+      }
     }
   }
 }
@@ -64,14 +93,16 @@ header {
   img {
     height: 70px;
   }
-  img#img_logoMin {
+  img#img_logoMin,
+  div#nav__main__mobile {
     display: none;
   }
   nav {
     margin: 0 20px 0 auto;
     display: flex;
     gap: 80px;
-    div#nav__main, div#nav__sub {
+    div#nav__main,
+    div#nav__sub {
       ul {
         display: flex;
         justify-content: flex-end;
@@ -107,6 +138,24 @@ header {
     div#nav__sub {
       ul {
         gap: 0 !important;
+      }
+    }
+    div#nav__main__mobile {
+      display: block;
+      position: absolute;
+      background-color: var(--white);
+      top: 90px;
+      left: 0;
+      width: 100vw;
+      padding: 20px 10vw;
+      z-index: 9;
+      box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+      transition: .3s ease;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
       }
     }
   }

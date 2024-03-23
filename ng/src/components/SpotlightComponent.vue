@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
     div#spotlightContainer {
         width: 80vw;
-        margin: 100px auto;
+        margin: 100px auto 70px auto;
         display: flex;
         justify-content: space-between;
         align-items: center;

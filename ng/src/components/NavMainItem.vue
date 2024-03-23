@@ -35,6 +35,9 @@ li {
     img {
       height: 20px;
     }
+    p {
+      font-weight: 600;
+    }
   }
 }
 </style>
