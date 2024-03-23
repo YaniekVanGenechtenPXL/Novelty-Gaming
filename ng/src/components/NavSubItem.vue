@@ -17,7 +17,6 @@ export default {
   methods: {
     handleClick() {
       if (this.item.label === 'Main navigation') {
-        
       }
     }
   }

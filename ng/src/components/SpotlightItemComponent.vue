@@ -70,24 +70,24 @@ div#container {
 }
 
 @media (max-width: 1100px) {
-    div#container {
-        width: 100%;
-        height: 30vw;
-        div#rightside {
-          h3 {
-            font-size: 4vw;
-          }
-          p {
-            font-size: 3vw;
-          }
-          button {
-            bottom: 20px;
-            right: 20px;
-            width: 16vw;
-            height: 6vw;
-            font-size: 2vw;
-          }
-        }
+  div#container {
+    width: 100%;
+    height: 30vw;
+    div#rightside {
+      h3 {
+        font-size: 4vw;
+      }
+      p {
+        font-size: 3vw;
+      }
+      button {
+        bottom: 20px;
+        right: 20px;
+        width: 16vw;
+        height: 6vw;
+        font-size: 2vw;
+      }
     }
+  }
 }
 </style>

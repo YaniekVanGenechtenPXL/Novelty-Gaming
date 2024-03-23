@@ -6,7 +6,7 @@
     </div>
     <div id="contact">
       <h3>Contact</h3>
-      <form>
+      <form @submit.prevent="">
         <textarea name="message" id="message" placeholder="Type your message"></textarea>
         <div id="footer__form__buttons">
           <button type="submit" class="buttonPrimary">Submit</button>
@@ -89,6 +89,7 @@ footer {
           border: none;
           border-radius: 5px;
           padding: 2px;
+          cursor: pointer;
           &.buttonPrimary {
             color: var(--black);
           }

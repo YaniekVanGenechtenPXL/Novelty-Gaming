@@ -11,7 +11,7 @@ import { RouterView } from 'vue-router'
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "tt-commons-pro", sans-serif;
+  font-family: 'tt-commons-pro', sans-serif;
   font-style: normal;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 :root {
-  --black: #231F20;
-  --white: #F9F9F9;
+  --black: #231f20;
+  --white: #f9f9f9;
 }
 </style>

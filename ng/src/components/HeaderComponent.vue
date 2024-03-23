@@ -67,10 +67,10 @@ export default {
   methods: {
     toggleMobileMenu() {
       if (this.navMainMobileVisible === 'true') {
-        this.dynamicStyle = { top: '-300px' };
+        this.dynamicStyle = { top: '-300px' }
         this.navMainMobileVisible = 'false'
       } else {
-        this.dynamicStyle = { top: '90px' };
+        this.dynamicStyle = { top: '90px' }
         this.navMainMobileVisible = 'true'
       }
     }
@@ -150,7 +150,7 @@ header {
       padding: 20px 10vw;
       z-index: 9;
       box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
-      transition: .3s ease;
+      transition: 0.3s ease;
       ul {
         display: flex;
         flex-direction: column;

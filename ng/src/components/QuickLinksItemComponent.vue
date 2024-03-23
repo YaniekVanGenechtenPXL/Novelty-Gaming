@@ -43,34 +43,34 @@ li {
 }
 
 @media (min-width: 1100px) and (max-width: 1500px) {
-    li {
-        a {
-            p {
-                font-size: 1.5vw;
-            }
-        }
+  li {
+    a {
+      p {
+        font-size: 1.5vw;
+      }
     }
+  }
 }
 
 @media (min-width: 720px) and (max-width: 1100px) {
   li {
     width: calc(50% - 15px);
     a {
-        p {
-            font-size: 2vw;
-        }
+      p {
+        font-size: 2vw;
+      }
     }
   }
 }
 
 @media (max-width: 720px) {
-    li {
+  li {
     width: 100%;
     a {
-        padding-left: 40px;
-        p {
-            font-size: 5vw;
-        }
+      padding-left: 40px;
+      p {
+        font-size: 5vw;
+      }
     }
   }
 }
