@@ -9,6 +9,11 @@
 <script>
 import QuickLinksItemComponent from '../components/QuickLinksItemComponent.vue'
 
+import orderIcon from '../assets/icons/order.png';
+import giftIcon from '../assets/icons/gift.png';
+import smileyIcon from '../assets/icons/smiley.png';
+import contactIcon from '../assets/icons/contact.png'
+
 export default {
   components: {
     QuickLinksItemComponent
@@ -16,10 +21,10 @@ export default {
   data() {
     return {
       QuickLinksItems: [
-        { img: 'src/assets/icons/order.png', label: 'Order status', url: '/' },
-        { img: 'src/assets/icons/gift.png', label: 'Redeem code', url: '/' },
-        { img: 'src/assets/icons/smiley.png', label: 'Reviews', url: '/' },
-        { img: 'src/assets/icons/contact.png', label: 'Contact us', url: '/' }
+        { img: orderIcon, label: 'Order status', url: '/' },
+        { img: giftIcon, label: 'Redeem code', url: '/' },
+        { img: smileyIcon, label: 'Reviews', url: '/' },
+        { img: contactIcon, label: 'Contact us', url: '/' }
       ]
     }
   }

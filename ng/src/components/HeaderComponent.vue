@@ -31,6 +31,19 @@
 import NavMainItem from './NavMainItem.vue'
 import NavSubItem from './NavSubItem.vue'
 
+import homeIcon from '../assets/icons/home.png';
+import keycapsIcon from '../assets/icons/keycaps.png';
+import keyboardIcon from '../assets/icons/keyboard.png';
+import mousepadIcon from '../assets/icons/mousepad.png';
+import cableIcon from '../assets/icons/cable.png';
+import aboutIcon from '../assets/icons/about.png';
+
+import favouriteIcon from '../assets/icons/favourite.png';
+import cartIcon from '../assets/icons/cart.png';
+import accountIcon from '../assets/icons/account.png';
+import menuIcon from '../assets/icons/menu.png';
+
+
 export default {
   components: {
     NavMainItem,
@@ -44,21 +57,21 @@ export default {
       },
 
       navItems: [
-        { label: 'Home', url: '/', icon: 'src/assets/icons/home.png' },
-        { label: 'Keycaps', url: '/', icon: 'src/assets/icons/keycaps.png' },
-        { label: 'Keyboards', url: '/', icon: 'src/assets/icons/keyboard.png' },
-        { label: 'Mousepads', url: '/', icon: 'src/assets/icons/mousepad.png' },
-        { label: 'Cables', url: '/', icon: 'src/assets/icons/cable.png' },
-        { label: 'About us', url: '/', icon: 'src/assets/icons/about.png' }
+        { label: 'Home', url: '/', icon: homeIcon },
+        { label: 'Keycaps', url: '/', icon: keycapsIcon },
+        { label: 'Keyboards', url: '/', icon: keyboardIcon },
+        { label: 'Mousepads', url: '/', icon: mousepadIcon },
+        { label: 'Cables', url: '/', icon: cableIcon },
+        { label: 'About us', url: '/', icon: aboutIcon }
       ],
       navSubItems: [
-        { label: 'Favourite', url: '/', icon: 'src/assets/icons/favourite.png' },
-        { label: 'Shopping Cart', url: '/', icon: 'src/assets/icons/cart.png' },
-        { label: 'Account', url: '/', icon: 'src/assets/icons/account.png' },
+        { label: 'Favourite', url: '/', icon: favouriteIcon },
+        { label: 'Shopping Cart', url: '/', icon: cartIcon },
+        { label: 'Account', url: '/', icon: accountIcon },
         {
           label: 'Main navigation',
           url: '/',
-          icon: 'src/assets/icons/menu.png',
+          icon: menuIcon,
           click: 'toggleMobileMenu'
         }
       ]

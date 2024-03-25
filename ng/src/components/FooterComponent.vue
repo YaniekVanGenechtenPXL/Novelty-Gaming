@@ -91,6 +91,7 @@ footer {
           padding: 2px;
           cursor: pointer;
           &.buttonPrimary {
+            background-color: var(--white);
             color: var(--black);
           }
           &.buttonSecondary {

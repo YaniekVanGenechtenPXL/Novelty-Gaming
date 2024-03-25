@@ -7,6 +7,9 @@
 <script>
 import SpotlightItemComponent from '../components/SpotlightItemComponent.vue'
 
+import mousepad from '../assets/mousepad.png';
+import keyboard from '../assets/keyboard.png';
+
 export default {
   components: {
     SpotlightItemComponent
@@ -17,13 +20,13 @@ export default {
         {
           title: 'Authentic mousepads',
           desc: 'Up to 50 different designs',
-          img: 'src/assets/mousepad.png',
+          img: mousepad,
           buttonTxt: 'Get your pad'
         },
         {
           title: 'Custom keyboards',
           desc: 'Multiple keyboard styles',
-          img: 'src/assets/keyboard.png',
+          img: keyboard,
           buttonTxt: 'Get your board'
         }
       ]
