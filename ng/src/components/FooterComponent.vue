@@ -37,13 +37,13 @@
     <div id="follow">
       <h3>Follow us</h3>
       <div id="imgContainer">
-        <a href="#">
+        <a href="#" target="_blank">
           <img src="../assets/icons/youtube.png" alt="YouTube" />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/noveltygamings?igsh=N2JlMHNubjVxenFq" target="_blank">
           <img src="../assets/icons/instagram.png" alt="Instagram" />
         </a>
-        <a href="#">
+        <a href="#" target="_blank">
           <img src="../assets/icons/facebook.png" alt="Facebook" />
         </a>
       </div>

@@ -65,6 +65,9 @@ div#container {
       right: 50px;
       font-weight: 300;
       font-size: 1vw;
+      border: none;
+      border-radius: none;
+      background-color: var(--white);
     }
   }
 }

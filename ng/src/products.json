@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Black Mousepad",
+      "stock": 10,
+      "price": 29.99,
+      "image": "src/assets/products/Black_MP.jpg",
+      "description": "Description of Product 1"
+    },
+    {
+      "id": 2,
+      "title": "Black Mousepad Big Logo",
+      "stock": 5,
+      "price": 29.99,
+      "image": "src/assets/products/BlackV2_MP.jpg",
+      "description": "Description of Product 2"
+    },
+    {
+      "id": 3,
+      "title": "Pink Mousepad",
+      "stock": 3,
+      "price": 29.99,
+      "image": "../assets/products/Pink_MP.jpg",
+      "description": "Description of Product 3"
+    },
+    {
+      "id": 4,
+      "title": "White Mousepad",
+      "stock": 8,
+      "price": 29.99,
+      "image": "../assets/products/White_MP.jpg",
+      "description": "Description of Product 4"
+    },
+    {
+      "id": 5,
+      "title": "Zebra Mousepad",
+      "stock": 12,
+      "price": 29.99,
+      "image": "../assets/products/Zebra_MP.jpg",
+      "description": "Description of Product 5"
+    }
+  ]
+  
