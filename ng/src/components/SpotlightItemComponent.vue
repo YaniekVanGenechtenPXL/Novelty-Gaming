@@ -68,6 +68,7 @@ div#container {
       border: none;
       border-radius: none;
       background-color: var(--white);
+      cursor: pointer;
     }
   }
 }

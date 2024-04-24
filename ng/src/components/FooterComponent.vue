@@ -7,6 +7,7 @@
     <div id="contact">
       <h3>Contact</h3>
       <form @submit.prevent="">
+        <input name="email" id="email" type="email" placeholder="Email" >
         <textarea name="message" id="message" placeholder="Type your message"></textarea>
         <div id="footer__form__buttons">
           <button type="submit" class="buttonPrimary">Submit</button>
@@ -71,6 +72,13 @@ footer {
     form {
       display: flex;
       flex-direction: column;
+      input {
+        width: 15vw;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
       textarea {
         width: 15vw;
         height: 8vh;
@@ -88,7 +96,7 @@ footer {
           width: 45%;
           border: none;
           border-radius: 5px;
-          padding: 2px;
+          padding: 5px;
           cursor: pointer;
           &.buttonPrimary {
             background-color: var(--white);
@@ -104,12 +112,20 @@ footer {
     }
   }
   div#otherPages {
-    li {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li {
       list-style: none;
       a {
         text-decoration: none;
         color: var(--white);
       }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     }
   }
   div#follow {
@@ -150,6 +166,9 @@ footer {
     div#contact {
       width: 100%;
       form {
+        input {
+          width: 100%;
+        }
         textarea {
           width: 100%;
           height: 15vh;
@@ -175,6 +194,9 @@ footer {
     div#contact {
       width: 100%;
       form {
+        input {
+          width: 100%;
+        }
         textarea {
           width: 100%;
           height: 15vh;

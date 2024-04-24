@@ -74,19 +74,19 @@
         </div>
       </aside>
       <main>
-        <ProductComponent v-for="product in products" :key="product.id" :product="product" />
+        <ShopItemComponent v-for="product in products" :key="product.id" :product="product" />
       </main>
     </div>
   </div>
 </template>
 
 <script>
-import ProductComponent from '../components/ProductComponent.vue'
+import ShopItemComponent from './ShopItemComponent.vue'
 import productsData from '../products.json'
 
 export default {
   components: {
-    ProductComponent
+    ShopItemComponent
   },
   data() {
     return {
@@ -121,6 +121,9 @@ div#shopContainer {
     padding: 10px 0;
     display: flex;
     justify-content: flex-end;
+    select {
+      padding: 5px 0;
+    }
   }
   div#shop__mainContainer {
     width: 100%;
@@ -154,6 +157,7 @@ div#shopContainer {
             padding: 10px;
             select {
               width: 100%;
+              padding: 5px 0;
               border: 1px solid var(--black);
               background-color: var(--white);
             }
@@ -163,7 +167,7 @@ div#shopContainer {
               width: 100%;
               border: 1px solid var(--black);
               background-color: var(--white);
-              padding: 0 5px;
+              padding: 5px 5px;
             }
           }
         }

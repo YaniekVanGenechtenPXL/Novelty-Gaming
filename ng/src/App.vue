@@ -15,6 +15,10 @@ import { RouterView } from 'vue-router'
   font-style: normal;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--white);
 }

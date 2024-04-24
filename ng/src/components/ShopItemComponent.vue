@@ -2,8 +2,10 @@
   <div id="itemContainer">
     <div>
       <img :src="getImagePath" :alt="product.title" />
-      <h2>{{ product.title }}</h2>
-      <p>€{{ product.price }}</p>
+      <div id="textContainer">
+        <h2>{{ product.title }}</h2>
+        <p>€{{ product.price }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -47,17 +49,25 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div#itemContainer {
-    background-color: var(--white);
-    box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
-    width: calc(33.333% - 20px);
-    div {
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-        img {
-            width: 100%;
-        }
+  background-color: var(--white);
+  box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+  width: calc(33.333% - 20px);
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    img {
+      width: 100%;
+      border-radius: 5px;
     }
+    div#textContainer {
+      padding: 10px 0 5px 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
 }
 
 @media (min-width: 1100px) and (max-width: 1600px) {
